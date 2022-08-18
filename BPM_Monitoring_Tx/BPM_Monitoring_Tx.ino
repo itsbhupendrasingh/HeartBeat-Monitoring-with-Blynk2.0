@@ -4,7 +4,7 @@ SoftwareSerial SMESerial (6, 7);
 #include <PulseSensorPlayground.h>    
 
 const int PulseWire = A0;      
-const int LED13 = 13;           
+const int Ind = 13;           
 int Threshold = 550;           
                                
 PulseSensorPlayground pulseSensor;  
@@ -16,7 +16,7 @@ void setup() {
 
   // Configure the PulseSensor object, by assigning our variables to it. 
   pulseSensor.analogInput(PulseWire);   
-  pulseSensor.blinkOnPulse(LED13);       
+  pulseSensor.blinkOnPulse(Ind);       
   pulseSensor.setThreshold(Threshold);   
   delay(2000);
 
